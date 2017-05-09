@@ -16,3 +16,12 @@ Next, create a new webpack config with a configuration ready for React.
 ```bash
 $ webpack-cli init webpack-addons-react
 ```
+
+## Todo
+- Add more configuration options
+- Add options for styling/json/images/other
+- Polish based on feedback
+
+## Contributing
+
+Yes please!
