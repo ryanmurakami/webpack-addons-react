@@ -1,5 +1,5 @@
-module.exports = (answer) => {
-  const entryProp = answer.entry ? ( "'" + answer.entry + "'") : "'index.js'"
+module.exports = answer => {
+  const entryProp = answer.entry ? "'" + answer.entry + "'" : "'index.js'";
 
   return {
     entry: entryProp,
@@ -8,22 +8,19 @@ module.exports = (answer) => {
     },
     context: 'path.join(__dirname, "src")',
     module: {
-      rules: [{
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        options: {
-          presets: [
-            'es2015',
-            'react'
-          ]
+      rules: [
+        {
+          test: /\.jsx?$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+          options: {
+            presets: ['es2015', 'react']
+          }
         }
-      }]
+      ]
     },
     resolve: {
-      extensions: [
-        '.js', '.jsx'
-      ]
+      extensions: ['.js', '.jsx']
     }
-  }
-}
+  };
+};

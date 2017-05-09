@@ -1,6 +1,6 @@
-const Generator = require('yeoman-generator')
-const { List, Input } = require('webpack-addons')
-const createDevConfig = require('./dev-config')
+const Generator = require('yeoman-generator');
+const { List, Input } = require('webpack-addons');
+const createDevConfig = require('./dev-config');
 
 module.exports = class WebpackGenerator extends Generator {
   constructor(args, opts) {
@@ -9,15 +9,16 @@ module.exports = class WebpackGenerator extends Generator {
       dev: {
         webpackOptions: {}
       }
-    }
+    };
   }
 
-  prompting () {
+  prompting() {
     return this.prompt([
       Input('entry', 'What is the entry point in your app?')
-    ])
-    .then (answer => {
-      this.options.env.configuration.dev.webpackOptions = createDevConfig(answer);
-    })
+    ]).then(answer => {
+      this.options.env.configuration.dev.webpackOptions = createDevConfig(
+        answer
+      );
+    });
   }
-}
+};
