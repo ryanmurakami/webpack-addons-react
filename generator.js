@@ -17,9 +17,7 @@ module.exports = class WebpackGenerator extends Generator {
       Input('entry', 'What is the entry point in your app?')
     ])
     .then (answer => {
-      if(answer['confirm'] === 'Pengwings') {
-        this.options.env.configuration.dev.webpackOptions = createDevConfig(answer);
-      }
+      this.options.env.configuration.dev.webpackOptions = createDevConfig(answer);
     })
   }
 }

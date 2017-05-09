@@ -1,6 +1,6 @@
 {
   "name": "webpack-addons-react",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "React scaffolding addon for Webpack CLI",
   "main": "generator.js",
   "scripts": {
