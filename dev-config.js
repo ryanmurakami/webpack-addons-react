@@ -16,8 +16,7 @@ module.exports = (answer) => {
           presets: [
             'es2015',
             'react'
-          ],
-          plugins: [require('transform-object-assign')]
+          ]
         }
       }]
     },
