@@ -1,0 +1,27 @@
+{
+  "name": "webpack-addons-react",
+  "version": "0.1",
+  "description": "React scaffolding addon for Webpack CLI",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmurakami/webpack-addons-react.git"
+  },
+  "author": "Ryan Lewis<ryan@ryanhlewis.com>",
+  "bugs": {
+    "url": "https://github.com/ryanmurakami/webpack-addons-react/issues"
+  },
+  "homepage": "https://github.com/ryanmurakami/webpack-addons-react#readme",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "webpack-addons": "^1.1.2",
+    "yeoman-generator": "^1.1.1"
+  }
+}
