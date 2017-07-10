@@ -4,7 +4,7 @@ module.exports = answer => {
   return {
     entry: entryProp,
     output: {
-      filename: "'[name].js'"
+      filename: "'build/[name].js'"
     },
     context: 'path.join(__dirname, "src")',
     module: {
@@ -12,15 +12,15 @@ module.exports = answer => {
         {
           test: /\.jsx?$/,
           exclude: /node_modules/,
-          loader: 'babel-loader',
+          loader: "'babel-loader'",
           options: {
-            presets: ['es2015', 'react']
+            presets: ["'es2015'", "'react'"]
           }
         }
       ]
     },
     resolve: {
-      extensions: ['.js', '.jsx']
+      extensions: ["'.js'", "'.jsx'"]
     }
   };
 };
