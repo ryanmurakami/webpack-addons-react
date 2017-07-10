@@ -1,5 +1,5 @@
 module.exports = answer => {
-  const entryProp = answer.entry ? "'" + answer.entry + "'" : "'index.js'";
+  const entryProp = answer.entry ? "'" + answer.entry + "'" : "'index.js'"
 
   return {
     entry: entryProp,
@@ -22,5 +22,5 @@ module.exports = answer => {
     resolve: {
       extensions: ["'.js'", "'.jsx'"]
     }
-  };
-};
+  }
+}
